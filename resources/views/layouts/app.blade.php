@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" x-cloak>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
     @livewireStyles
 </head>
 
-<body class="font-sans antialiased h-full bg-slate-200 dark:bg-slate-800" x-data="setup()" x-cloak
+<body class="font-sans antialiased h-full bg-slate-200 dark:bg-slate-800" x-data="setup()" x-cloak x-cloak
     x-init="$refs.loading.classList.add('hidden'); setColors(color);" :class="{'dark': isDark}">
 
     <div x-ref="loading"
