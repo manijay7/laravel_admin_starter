@@ -1,4 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
+
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -15,7 +17,12 @@ module.exports = {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
         },
+        colors: {
+            light: 'var(--light)',
+            dark: 'var(--dark)',
+            darker: 'var(--darker)',
+        }
     },
-
+    darkMode: 'class',
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };
